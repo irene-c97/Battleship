@@ -1,0 +1,34 @@
+
+INSTRUCTIONS:
+
+The Battleship game consists of a board with a field with squares. There will be 4 ships on the field. The ships can be places at random or writing down the coordinates via a text area.
+
+Ships:
+- Carrier: length 5
+- Battleship: length 4
+- Submarine: length 3
+- Destroyer: length 2
+
+If you want to start the game with randomly placed boats, press "Start Game". Otherwise, press "Choose Placement Ships".
+If you press "Choose Placement Ships" you see text, which you can rewrite:
+
+20
+Carrier;3*2;3*3;3*4;3*5;3*6 
+Battleship;5*6;6*6;7*6;8*6 
+Submarine;5*2;6*2;7*2;
+Destroyer;1*7;1*8
+
+The first line of the text file is a positive integer that indicates the size of the board, this is maximum 20. After that, the file will list one ship per line, and each line will start with the ship's name, followed by the coordinates for the tiles that correspond to the ship's location. The name and coordinates are separated by a semicolon. A coordinate is specified by two numbers separated by an "*", where the first number represents the row and the second number the column. For example, "2 * 3" represents the tile in row 2 and column 3 of the board.
+When your coordinates contains errors (for example: overlapping ships), an error message will appear on the screen. This ensures that the game cannot be started and the game will be closed.
+
+There are 2 scoring systems to choose:
+- Every player gets the same amount of score for each boat
+- The first player starts with a score of 5, because he begins the game
+
+Then the game starts:
+. Each player calls out one shot each turn in attempt to hit one ship, by clicking on a square.
+When a player hits a boat, that player's score is increased.
+
+
+End of the game:
+The game is over when all boats are sunk. If the high score has been improved by the winning players, it will be saved.
